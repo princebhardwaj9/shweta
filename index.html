@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Chat bot</title>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no, height=device-height" />
+
+  </head>
+
+  <body>
+
+    <button onclick="requestPermission()">Click here for permission</button>
+
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-messaging.js"></script>
+
+    <script type="text/javascript">
+      window.ymConfig = {
+        bot: new URLSearchParams(window.location.search).get('bot') || 'x1589891354544',
+        // trigger:'x1549436510598',
+        logging: true,
+        serviceWorkerPath: './messaging-sw.js',
+        persistentNotification: false,
+        view: 'compact',
+        "triggerJourney":"init-yellow-journey_zvaddn",
+        payload: {"Platform":"Android-App","category":"4402713315609","email":"yellowtest@g.com","name":"Dhhd","section":"4402713320217","selectedArticle":"4402713344281","ticketSubject":"rewards | 4402713344281","userState":"application","widgetVersion":"v2"},
+        // host: 'https://staging.yellowmessenger.com'
+        // ads: true
+        ymAuthenticationToken:'1234',
+        // version: 'branch-staging/v2/latest'
+
+        // pwa: true
+      };
+      const d = document,
+        e = d.createElement('script');
+      (e.type = 'text/javascript'), (e.async = !0), (e.src = 'https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js');
+      const t = d.getElementsByTagName('script')[0];
+      t.parentNode.insertBefore(e, t);
+    </script>
+
+  </body>
+
+</html>
